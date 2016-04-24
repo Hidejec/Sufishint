@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+         <!-- Fonts -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+        <title>Sufishint</title>
+        <script type="text/javascript" src="js/jquery.js"></script>
+       
+        <style>
+              @font-face{
+            font-family: Bebas;
+            src: url('fonts/bebas.otf');
+        }
+        body {
+            background-color: #4089AA;
+        }
+
+        .fa-btn {
+            margin-right: 6px;
+        }
+        .logo{
+            width:420px;
+            height:340px;
+            margin-top: 3%;
+        }
+        .head_one{
+            font-family: 'Roboto';
+            font-size: 24px;
+            color:white;
+        }
+        .head_two{
+            font-family: 'Bebas';
+            font-size: 42px;
+            color:white;
+        }
+        .btn{
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 24px;
+            height: 80px;
+            width: 320px;
+            padding-top: 20px;
+        }
+        .btn-warning{
+            margin-left: 5px;
+        }
+        .btn-primary{
+            background-color: #327798;
+        }
+        @media  screen and (max-width: 540px){
+            .logo{
+                width:320px;
+                height:auto;
+            }
+            .btn{
+                height: auto;
+                width: 220px;
+                font-size: 16px;
+            }
+        }
+
+        /* Portrait */
+        @media  only screen and (min-device-width: 320px)  and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+            .logo{
+                width:320px;
+                height:auto;
+            }
+            .btn{
+                width: 260px;
+                height: 80px;
+            }
+            .head_one{
+                font-size: 15px;
+            }
+            .head_two{
+                font-size: 22px;
+            }
+            .btn-warning{
+                margin-top: 15px;
+            }
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <div id="status"></div>
+        <div class="container text-center">
+            <img src="img/a.png" class="logo img-responsive center-block" />
+
+            <p class="head_one">Promoting Sustainable Fisheries through <br/> Responsible Fishing</p>
+            <p class="head_two">LOGIN AS</p>
+            <a href="others/login/userlogin.html" class="btn btn-primary">SUFISHINT WATCHER</a>
+            <a href="others/login/vessel-login.html" class="btn btn-warning">COMMERCIAL VESSEL</a>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </body>
+</html>

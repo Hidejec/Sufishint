@@ -1,0 +1,46 @@
+<manifest alg="2" build="2015.1.2.344" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive" exportTarget="other" domain="projectsufishint.com" resolutions="1x" timestamp="1461416195648">
+  <folder name="css">
+    <file name="site_global.css" crc="131700929"/>
+    <file name="vessel-login.css" crc="299409160" ref="vessel-login"/>
+    <file name="nomq_vessel-login.css" crc="3906208915" ref="vessel-login"/>
+    <file name="index.css" crc="462804087" ref="index"/>
+    <file name="nomq_index.css" crc="68402319" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="207176553" ref="index:vessel-login"/>
+    <file name="museutils.js" crc="3790713428" ref="index:vessel-login"/>
+    <file name="whatinput.js" crc="84559013" ref="index:vessel-login"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="3918880840" ref="index:vessel-login"/>
+    <file name="jquery.watch.js" crc="4244854265" ref="index:vessel-login"/>
+    <file name="webpro.js" crc="329496574" ref="index:vessel-login"/>
+    <file name="form_check.php" crc="3805695515" ref="index:vessel-login"/>
+    <file name="form_throttle.php" crc="3802629389" ref="index:vessel-login"/>
+    <file name="form_process.php" crc="54267062" ref="index:vessel-login"/>
+    <file name="form-u170.php" crc="330220529" ref="index"/>
+    <file name="jquery.museresponsive.js" crc="3895133147" ref="index:vessel-login"/>
+    <file name="form-u599.php" crc="160847068" ref="vessel-login"/>
+  </folder>
+  <folder name="images">
+    <file name="projsuf_logo-u114-fr.png" crc="4132283987" ref="index:vessel-login"/>
+    <file name="u176-17.png" crc="3843745209" ref="index"/>
+    <file name="u176-17-r.png" crc="72034138" ref="index"/>
+    <file name="u176-17-m.png" crc="395052237" ref="index"/>
+    <file name="u176-17-fs.png" crc="508458565" ref="index"/>
+    <file name="projsuf_logo.png" crc="3846418209" ref="index:vessel-login"/>
+    <file name="u176-172.png" crc="3843745209" ref="index"/>
+    <file name="u176-17-r2.png" crc="72034138" ref="index"/>
+    <file name="u176-17-m2.png" crc="395052237" ref="index"/>
+    <file name="u176-17-fs2.png" crc="508458565" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:vessel-login"/>
+    <file name="u601-17.png" crc="3843745209" ref="vessel-login"/>
+    <file name="u601-17-r.png" crc="72034138" ref="vessel-login"/>
+    <file name="u601-17-m.png" crc="395052237" ref="vessel-login"/>
+    <file name="u601-17-fs.png" crc="508458565" ref="vessel-login"/>
+    <file name="u601-172.png" crc="3843745209" ref="vessel-login"/>
+    <file name="u601-17-r2.png" crc="72034138" ref="vessel-login"/>
+    <file name="u601-17-m2.png" crc="395052237" ref="vessel-login"/>
+    <file name="u601-17-fs2.png" crc="508458565" ref="vessel-login"/>
+  </folder>
+  <file name="index.html" crc="4085511102" seo="true" mt="1461416193043" redirect="true"/>
+  <file name="vessel-login.html" crc="4041358613" seo="true" mt="1461416128570" redirect="true"/>
+</manifest>

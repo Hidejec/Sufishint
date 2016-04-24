@@ -1,0 +1,155 @@
+	#muse_css_mq
+	{
+		background-color: #FFFFFF;
+	}
+
+	#bp_infinity.active
+	{
+		display: block;
+	}
+
+	#u594_position_content
+	{
+		padding-top: 172px;
+		padding-bottom: 97px;
+		width: 100%;
+	}
+
+	#u596-4
+	{
+		min-height: 39px;
+		width: 53.62%;
+		left: -21.49%;
+	}
+
+	#u597-4
+	{
+		top: -4px;
+		margin-bottom: -4px;
+		width: 61.14%;
+		left: -19.73%;
+	}
+
+	#buttonu612
+	{
+		margin-top: 240px;
+		width: 73.93%;
+		left: -21.49%;
+	}
+
+	#buttonu612:hover
+	{
+		margin-right: 0px;
+		margin-top: 240px;
+		width: 73.93%;
+	}
+
+	#buttonu612.ButtonSelected
+	{
+		margin-right: 0px;
+		margin-top: 240px;
+		width: 73.93%;
+	}
+
+	#u613-4
+	{
+		width: 44.65%;
+		left: 27.75%;
+	}
+
+	#buttonu612:hover #u613-4
+	{
+		width: 44.65%;
+	}
+
+	#buttonu612.ButtonSelected #u613-4
+	{
+		width: 44.65%;
+	}
+
+	#u594-bw
+	{
+		margin-top: 40px;
+	}
+
+	#u595
+	{
+		height: 62px;
+		background-image: url("../images/projsuf_logo-u114-fr.png");
+		margin-right: -10000px;
+		margin-top: 101px;
+		width: 18.07%;
+		left: -14.36%;
+	}
+
+	#u598-4
+	{
+		min-height: 11px;
+		margin-right: -10000px;
+		margin-top: 562px;
+		width: 18.07%;
+		left: -13.19%;
+	}
+
+	#widgetu599
+	{
+		height: 245px;
+		margin-top: 256px;
+		left: -21.49%;
+	}
+
+	#widgetu608
+	{
+		left: 1px;
+	}
+
+	#u600-4
+	{
+		width: 200px;
+		min-height: 21px;
+		margin-top: 220px;
+		left: 153px;
+	}
+
+	#u602-4
+	{
+		width: 200px;
+		min-height: 21px;
+		margin-top: 220px;
+		left: 153px;
+	}
+
+	#u607-3
+	{
+		width: 200px;
+		min-height: 21px;
+		margin-top: 220px;
+		left: 153px;
+	}
+
+	#widgetu599.frm-sub-st #u600-4,#widgetu599.frm-subm-err-st #u602-4,#widgetu599.frm-subm-ok-st #u607-3
+	{
+		min-height: 25px;
+	}
+
+	#u601-17
+	{
+		background-image: url("../images/u601-17.png");
+	}
+
+	#u601-17:hover
+	{
+		background-image: url("../images/u601-17-r.png");
+	}
+
+	#u601-17:active
+	{
+		background-image: url("../images/u601-17-m.png");
+	}
+
+	#widgetu599.frm-sub-st #u601-17
+	{
+		background-image: url("../images/u601-17-fs.png");
+	}
+
+

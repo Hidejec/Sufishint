@@ -1,0 +1,160 @@
+	#muse_css_mq
+	{
+		background-color: #FFFFFF;
+	}
+
+	#bp_infinity.active
+	{
+		display: block;
+	}
+
+	#page
+	{
+		min-height: 500px;
+		max-width: 1024px;
+	}
+
+	#u110_align_to_page
+	{
+		max-width: 1024px;
+		padding-bottom: 97px;
+	}
+
+	#pu114
+	{
+		position: relative;
+		width: 100%;
+	}
+
+	#u114
+	{
+		height: 62px;
+		background-image: url("../images/projsuf_logo-u114-fr.png");
+		margin-right: -10000px;
+		width: 18.07%;
+		left: 10.55%;
+	}
+
+	#u126-4
+	{
+		min-height: 39px;
+		margin-right: -10000px;
+		margin-top: 49px;
+		width: 53.62%;
+		left: 23.25%;
+	}
+
+	#u131-4
+	{
+		margin-top: 20px;
+		width: 61.14%;
+		left: 18.07%;
+	}
+
+	#u158-4
+	{
+		min-height: 11px;
+		margin-top: 260px;
+		width: 18.07%;
+		left: 37.11%;
+	}
+
+	#buttonu481
+	{
+		margin-top: 5px;
+		width: 73.93%;
+		left: 12.99%;
+	}
+
+	#buttonu481:hover
+	{
+		margin-right: 0px;
+		margin-top: 5px;
+		width: 73.93%;
+	}
+
+	#buttonu481.ButtonSelected
+	{
+		margin-right: 0px;
+		margin-top: 5px;
+		width: 73.93%;
+	}
+
+	#u482-4
+	{
+		width: 44.65%;
+		left: 27.75%;
+	}
+
+	#buttonu481:hover #u482-4
+	{
+		width: 44.65%;
+	}
+
+	#buttonu481.ButtonSelected #u482-4
+	{
+		width: 44.65%;
+	}
+
+	#widgetu170
+	{
+		height: 245px;
+		margin-top: 216px;
+		left: 13.19%;
+	}
+
+	#widgetu171
+	{
+		left: 1px;
+	}
+
+	#u178-4
+	{
+		width: 200px;
+		min-height: 21px;
+		margin-top: 220px;
+		left: 153px;
+	}
+
+	#u175-4
+	{
+		width: 200px;
+		min-height: 21px;
+		margin-top: 220px;
+		left: 153px;
+	}
+
+	#u177-3
+	{
+		width: 200px;
+		min-height: 21px;
+		margin-top: 220px;
+		left: 153px;
+	}
+
+	#widgetu170.frm-sub-st #u178-4,#widgetu170.frm-subm-err-st #u175-4,#widgetu170.frm-subm-ok-st #u177-3
+	{
+		min-height: 25px;
+	}
+
+	#u176-17
+	{
+		background-image: url("../images/u176-17.png");
+	}
+
+	#u176-17:hover
+	{
+		background-image: url("../images/u176-17-r.png");
+	}
+
+	#u176-17:active
+	{
+		background-image: url("../images/u176-17-m.png");
+	}
+
+	#widgetu170.frm-sub-st #u176-17
+	{
+		background-image: url("../images/u176-17-fs.png");
+	}
+
+
