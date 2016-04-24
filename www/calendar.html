@@ -19,7 +19,7 @@
 	<link href='fullcalendar.css' rel='stylesheet' />
 	<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
 	<script src='moment.min.js'></script>
-	<script src='jquery.min.js'></script>
+	<script src='js/jquery.js'></script>
 	<script src='fullcalendar.min.js'></script>
 	<script type="text/javascript" src="js/map.js"></script>
 	<script>
@@ -84,6 +84,9 @@
 	}
 	.fc-content-skeleton thead td > span{
     	font-size: 12px;	
+    }
+    .fc-day-grid .fc-week:nth-child(3) .fc-content-skeleton{
+    	background-color: red;	
     }
 	/* Sticky footer styles
 		-------------------------------------------------- */
@@ -197,9 +200,9 @@
 	</div>
 
 	<div class="row">
-		<div class="col-xs-6 col-xs-4 spec">SPECIES</div>
-		<div class="col-xs-6 col-xs-4 habi">HABITAT</div>
-		<div class="col-xs-6 col-xs-4 cal">CALENDAR</div>
+		<div class="col-xs-6 col-xs-4 spec"><a href="specie_select.html" style="color:white;">SPECIES</a></div>
+		<div class="col-xs-6 col-xs-4 habi"><a href="#" style="color:white;">HABITAT</a></div>
+		<div class="col-xs-6 col-xs-4 cal"><a href="calendar.html" style="color:white;">CALENDAR</a></div>
 	</div>
 
 	<div id="calendar"></div>
@@ -207,7 +210,7 @@
 
 	<footer class="footer">
       <div class="container">
-        <a class="text-muted" href="#!"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
+        <a class="text-muted" href="habitat.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
       </div>
     </footer>
 

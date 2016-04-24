@@ -3,6 +3,7 @@ var city;
 var lineCoordinatesArray = [];
 var map, infoWindow, pos;
 var marker;
+var licenses = [];
 
 function formatDate(date) {
     var d = new Date(date),
@@ -58,6 +59,7 @@ function formatDate(date) {
                 position: pos,
                 map: map
               });
+              //alert("latitude"+pos.lat+"\nLongitude"+pos.lng);
               infoWindow.open(map, marker);
               city = results[1].address_components[1].long_name;
               infoWindow.setContent(city);
@@ -84,24 +86,34 @@ function formatDate(date) {
                     //document.getElementById("status").innerHTML = data.responseText;
                   }
                 });
-                var date2 = [];
-               
-                for(var x = 1 ; x<= 5; x++){
+                var date2 = [[]];
+                
+
+                for(var x = 1 ; x<= 60; x++){
                   for(var y= 1; y<=7; y++){
 
-                      date2[x-1] = $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").attr("data-date");
-                      console.log(date2[x-1]);
-                      var wa = $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").append("<span class='"+city+"-"+date2[x-1]+"'></span>");
+                      date2[[x-1][y-1]] = $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").attr("data-date");
                       
-                      $.ajax({
-                        url: "http://lol-haha.com/LiquidoAPI/vessel/count/"+city+"/"+date2[x-1]+"",
+                      $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").click(function(){
+                           $.getJSON("http://lol-haha.com/LiquidoAPI/vessels/list/"+city+"/"+$(this).attr("data-date"), function(result) {
+                              $.each(result, function(i, field) {
+                                
+                                licenses.push(field.license_code);
+                                 console.log(licenses);
+                              });
+                            });
+                           window.location.href="license-list.html";
+                      }); 
+                      var wa = $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").append("<span class='"+city+"-"+date2[[x-1][y-1]]+"'></span>");
+                      $(".fc-content-skeleton thead td > span."+city+"-"+date2[[x-1][y-1]]).append(Math.floor((Math.random() * 70) + 1));
+                      /*$.ajax({
+                        url: "http://lol-haha.com/LiquidoAPI/vessels/count/"+city+"/"+date2[[x-1][y-1]]+"",
                         type: "get",
                         dataType: "json",
                         success: function(data){
-                          console.log(data);
-                          console.log($(".fc-content-skeleton thead td > span."+city+"-2016-04-24").append());
+                          $(".fc-content-skeleton thead td > span."+city+"-"+date2[[x-1][y-1]]).append(data);
                         }
-                    });
+                    });*/
                   }
 
                 }

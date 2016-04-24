@@ -3,6 +3,7 @@ var city;
 var lineCoordinatesArray = [];
 var map, infoWindow, pos;
 var marker;
+var licenses = [];
 
 function formatDate(date) {
     var d = new Date(date),
@@ -15,6 +16,22 @@ function formatDate(date) {
 
     return [year, month, day].join('-');
 }
+
+    Date.prototype.addDays = function(days) {
+       var dat = new Date(this.valueOf())
+       dat.setDate(dat.getDate() + days);
+       return dat;
+   }
+
+   function getDates(startDate, stopDate) {
+      var dateArray = new Array();
+      var currentDate = startDate;
+      while (currentDate <= stopDate) {
+        dateArray.push(currentDate)
+        currentDate = currentDate.addDays(1);
+      }
+      return dateArray;
+    }
 
   function initMap() {
     var geocoder = new google.maps.Geocoder;
@@ -42,6 +59,7 @@ function formatDate(date) {
                 position: pos,
                 map: map
               });
+              //alert("latitude"+pos.lat+"\nLongitude"+pos.lng);
               infoWindow.open(map, marker);
               city = results[1].address_components[1].long_name;
               infoWindow.setContent(city);
@@ -68,6 +86,38 @@ function formatDate(date) {
                     //document.getElementById("status").innerHTML = data.responseText;
                   }
                 });
+                var date2 = [[]];
+                
+
+                for(var x = 1 ; x<= 60; x++){
+                  for(var y= 1; y<=7; y++){
+
+                      date2[[x-1][y-1]] = $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").attr("data-date");
+                      
+                      $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").click(function(){
+                           $.getJSON("http://lol-haha.com/LiquidoAPI/vessels/list/"+city+"/"+$(this).attr("data-date"), function(result) {
+                              $.each(result, function(i, field) {
+                                
+                                licenses.push(field.license_code);
+                                 console.log(licenses);
+                              });
+                            });
+                           window.location.href="license-list.html";
+                      }); 
+                      var wa = $(".fc-day-grid .fc-week:nth-child("+(x)+") .fc-content-skeleton thead td:nth-child("+(y)+")").append("<span class='"+city+"-"+date2[[x-1][y-1]]+"'></span>");
+                      $(".fc-content-skeleton thead td > span."+city+"-"+date2[[x-1][y-1]]).append(Math.floor((Math.random() * 70) + 1));
+                      /*$.ajax({
+                        url: "http://lol-haha.com/LiquidoAPI/vessels/count/"+city+"/"+date2[[x-1][y-1]]+"",
+                        type: "get",
+                        dataType: "json",
+                        success: function(data){
+                          $(".fc-content-skeleton thead td > span."+city+"-"+date2[[x-1][y-1]]).append(data);
+                        }
+                    });*/
+                  }
+
+                }
+
             } else {
               window.alert('No results found');
             }
@@ -87,7 +137,7 @@ function formatDate(date) {
         'lat: ' + event.latLng.lat() + ', ' +
         'lng: ' + event.latLng.lng()
         );
-    });*/
+    });*/ 
 
   }
 

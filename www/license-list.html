@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta name="description" content="Full view calendar component for twitter bootstrap with year, month, week, day views.">
+	<meta name="keywords" content="jQuery,Bootstrap,Calendar,HTML,CSS,JavaScript,responsive,month,week,year,day">
+	<meta name="author" content="Serhioromano">
+	<meta charset="UTF-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	 <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link href='fullcalendar.css' rel='stylesheet' />
+	<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
+	<script src='moment.min.js'></script>
+	<script src='jquery.min.js'></script>
+	<script src='fullcalendar.min.js'></script>
+	<script>
+
+	$(document).ready(function() {
+
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'title',
+			},
+			defaultView: 'month',
+			editable: true,
+		});
+		
+	});
+
+
+
+</script>
+<style>
+	@font-face{
+			font-family: 'Bebas';
+			src: url('assets/bebas.otf');
+		}
+	body {
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		font-size: 14px;
+	}
+
+		body {
+		  /* Margin bottom by footer height */
+		  margin-bottom: 60px;
+		}
+		.footer {
+		  position: absolute;
+		  bottom: 0;
+		  width: 100%;
+		  /* Set the fixed height of the footer here */
+		  background-color: #327798;
+		}
+
+
+		/* Custom page CSS
+		-------------------------------------------------- */
+		/* Not required for template or sticky footer method. */
+
+		.container {
+		  width: auto;
+		  max-width: 680px;
+		  padding: 0 15px;
+		}
+		.container .text-muted {
+		  margin: 20px 0;
+		}
+
+		.footer .container a{
+			font-family: 'Roboto';
+			font-weight: bold;
+			font-size: 20px;
+			color:white;
+			float: left;
+		}
+		.footer{
+			background-color: #327798;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+		.top-banner{
+			background-color: #327798;
+		}
+		h3{
+			font-family: 'Bebas';
+			color: white;
+			float: right;
+			font-size: 32px;
+		}
+		h4{
+			font-family: 'Bebas';
+			color: white;
+			float: right;
+			
+		}
+		h3,h4{
+			margin-top: -60px;
+		}
+		.logo{
+			margin-top:10px;
+			width: 100px;
+			height: 80px;
+			position: relative;
+		}
+		.img-circle{
+			width: 40px;
+			height: 40px;
+			margin-bottom: 10px;
+		}
+		.list-group li a{
+			font-family: 'Roboto';
+			color:white;
+			font-size: 22px;
+			margin-left: 20px;
+			mar
+		}
+		.list-group .list-group-item{
+			background-color: #FE802B;
+		}
+		.list-group span{
+			padding-left: 100px;
+
+		}
+		.white-label{
+			background-color: #fff;
+		}
+</style>
+</head>
+<body>
+
+	<div class="container top-banner" style="margin-bottom:-20px">
+	  <img src="assets/projsuf_logo.png" class="img-responsive logo" />
+		<h3>ZAMBOANGA</h3><br/><br/>
+			<h4>COORDINATES: 6.9214°N, 122.0790°E</h4>
+	</div>
+
+	<div class="white-label">
+	<p align="right" style="margin-top:30px;margin-right:20px;font-family:Bebas">Total number of influx:5</p>
+	</div>
+
+	<ul class="list-group">
+		<li class="list-group-item"><a href="others/vms/vms.html" class="text-center" style="font-family:Roboto">1234-567-890<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+		<li class="list-group-item"><a href="#!" class="text-center" style="font-family:Roboto">1234-567-890</a></li>
+		<li class="list-group-item"><a href="#!" class="text-center" style="font-family:Roboto">1234-567-890</a></li>
+		<li class="list-group-item"><a href="#!" class="text-center" style="font-family:Roboto">1234-567-890</a></li>
+		<li class="list-group-item"><a href="#!" class="text-center" style="font-family:Roboto">1234-567-890</a></li>
+	</ul>
+
+
+
+
+
+	<footer class="footer">
+      <div class="container">
+        <a class="text-muted" href="calendar.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
+      </div>
+    </footer>
+
+ </div>
+
+
+
+</body>
+</html>
