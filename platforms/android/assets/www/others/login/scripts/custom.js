@@ -6,7 +6,7 @@ $(document).ready(function(){
 			type: "get",
 			dataType: "json",
 			success: function(data){
-				window.location.href="../../specie_select.html";
+				window.location.href="../../info_page.html";
 			}
 		});
 	});
@@ -16,7 +16,7 @@ $(document).ready(function(){
 			type: "get",
 			dataType: "json",
 			success: function(data){
-				window.location.href="../../specie_select.html";
+				window.location.href="../../info_page.html";
 			}
 		});
 	});
@@ -34,10 +34,10 @@ $(document).ready(function(){
 			type: "get",
 			dataType: "json",
 			success: function(data){
-				window.location.href="specie_select.html";
+				window.location.href="info_page.html";
 			},
 			error: function(msg){
-				window.location.href="specie_select.html";
+				window.location.href="info_page.html";
 			}
 		});
 	});
