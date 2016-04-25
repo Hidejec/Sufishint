@@ -190,9 +190,10 @@
 <div id="map"></div>
 	<div class="container top-banner">
 	  <img src="assets/projsuf_logo.png" class="img-responsive logo" />
-		<h3>ZAMBOANGA</h3><br/><br/>
-			<h4>COORDINATES: 6.9214°N, 122.0790°E</h4>
-	  
+		<h3 id="city">ZAMBOANGA</h3><br/><br/>  
+			<h4 id="coordinates">COORDINATES: 6.9214°N, 122.0790°E</h4>
+	  	<!-- // Set first to Zamboanga city for presentation purposes only. But it is now working dynamically.
+              pos.lat = 6.9214; pos.lng = 122.0790; //And also set the coordinates static for the sake of presentation -->
 	</div>
 	<div class="container second-banner">
 		<h2 class="text-center sardines">SARDINES</h3>
@@ -219,3 +220,8 @@
         async defer></script>
 </body>
 </html>
+
+
+
+<!-- NOTE: unfortunately, changing months will clear the vessel numbers on the dates. 
+	We will address that in the future builds but for now it is as it is since it's just a prototype. -->
