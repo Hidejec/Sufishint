@@ -19,9 +19,8 @@
 	<link href='fullcalendar.css' rel='stylesheet' />
 	<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
 	<script src='moment.min.js'></script>
-	<script src='js/jquery.js'></script>
+	<script src='jquery.min.js'></script>
 	<script src='fullcalendar.min.js'></script>
-	<script type="text/javascript" src="js/map.js"></script>
 	<script>
 
 	$(document).ready(function() {
@@ -33,7 +32,7 @@
 			defaultView: 'month',
 			editable: true,
 		});
-		
+
 	});
 
 
@@ -42,58 +41,13 @@
 <style>
 	@font-face{
 			font-family: 'Bebas';
-			src: url('assets/bebas.otf');
+			src: url('../assets/bebas.otf');
 		}
 	body {
 		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 		font-size: 14px;
 	}
 
-	#calendar {
-		max-width: 300px;
-		max-height: 350px;
-		min-height: 300px;
-		vertical-align: middle !important;
-
-		margin-left: auto;
-		margin-right: auto;
-		font-family: 'Roboto';
-	}
-	.fc td, .fc th {
-  		border-style: none !important;
-  		padding-bottom: 10px;
-  		text-transform: uppercase;
-	}
-	#calendar td {
-    	text-align: center;
-    	border: 1px solid #000;
-    	font-size: 18px;
-	}
-	.fc-content-skeleton{
-		background-color: #BDFFB6;
-		border-radius: 20px;
-	}
-	.fc-head{
-		margin-bottom: 15px;
-	}
-	.fc th{
-		color: #FF677C;
-	}
-	.fc td{
-		font-family: 
-	}
-	.fc-content-skeleton thead td > span{
-    	font-size: 12px;	
-    }
-    .fc-day-grid .fc-week:nth-child(3) .fc-content-skeleton{
-    	background-color: red;	
-    }
-	/* Sticky footer styles
-		-------------------------------------------------- */
-		html {
-		  position: relative;
-		  min-height: 100%;
-		}
 		body {
 		  /* Margin bottom by footer height */
 		  margin-bottom: 60px;
@@ -103,7 +57,7 @@
 		  bottom: 0;
 		  width: 100%;
 		  /* Set the fixed height of the footer here */
-		  background-color: #f5f5f5;
+		  background-color: #327798;
 		}
 
 
@@ -128,7 +82,7 @@
 			float: left;
 		}
 		.footer{
-			background-color: #FE802B;
+			background-color: #327798;
 		}
 		a:hover{
 			text-decoration: none;
@@ -146,7 +100,7 @@
 			font-family: 'Bebas';
 			color: white;
 			float: right;
-			
+
 		}
 		h3,h4{
 			margin-top: -60px;
@@ -156,72 +110,55 @@
 			height: 80px;
 			position: relative;
 		}
-		.second-banner{
-			background-image: url('assets/images/sardines_head.jpg');
-			background-repeat: no-repeat;
-			background-position: center;
-			height: 80px;
-		}
-		.sardines{
-			color: white;
-			font-family: 'Bebas';
-		}
-		.row{
-			font-family: 'Roboto';
-			text-align: center;
-		}
-		.row .col-xs-6{
+		.img-circle{
+			width: 40px;
 			height: 40px;
+			margin-bottom: 10px;
+		}
+		.list-group li a{
+			font-family: 'Roboto';
 			color:white;
-			padding-top: 10px;
+			font-size: 22px;
+			margin-left: 20px;
+			mar
 		}
-		.spec{
-			background-color: #4089AA;
-		}
-		.habi{
-			background-color: #327798;
-		}
-		.cal{
+		.list-group .list-group-item{
 			background-color: #FE802B;
+		}
+		.list-group span{
+			padding-left: 100px;
+
 		}
 </style>
 </head>
 <body>
-<div id="map"></div>
+
 	<div class="container top-banner">
-	  <img src="assets/projsuf_logo.png" class="img-responsive logo" />
-		<h3 id="city">ZAMBOANGA</h3><br/><br/>  
-			<h4 id="coordinates">COORDINATES: 6.9214°N, 122.0790°E</h4>
-	  	<!-- // Set first to Zamboanga city for presentation purposes only. But it is now working dynamically.
-              pos.lat = 6.9214; pos.lng = 122.0790; //And also set the coordinates static for the sake of presentation -->
+	  <img src="../assets/projsuf_logo.png" class="img-responsive logo" />
+		<h3>ZAMBOANGA</h3><br/><br/>
+			<h4>COORDINATES: 6.9214°N, 122.0790°E</h4>
 	</div>
-	<div class="container second-banner">
-		<h2 class="text-center sardines">SARDINES</h3>
-		
-	</div>
+	<ul class="list-group">
+		<li class="list-group-item"><img src="../assets/images/sardin_2.jpg" alt="sardines_logo" class="img-circle"><a href="habitat.html" class="text-center">Sardines <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+		<li class="list-group-item"><img src="../assets/projsuf_logo.png" class="img-circle"><a href="#!" class="text-center">Unlockable Specie 2</a></li>
+		<li class="list-group-item"><img src="../assets/projsuf_logo.png" class="img-circle"><a href="#!" class="text-center">Unlockable Specie 3</a></li>
+		<li class="list-group-item"><img src="../assets/projsuf_logo.png" class="img-circle"><a href="#!" class="text-center">Unlockable Specie 4</a></li>
+		<li class="list-group-item"><img src="../assets/projsuf_logo.png" class="img-circle"><a href="#!" class="text-center">Unlockable Specie 5</a></li>
+	</ul>
 
-	<div class="row">
-		<div class="col-xs-6 col-xs-4 spec"><a href="specie_select.html" style="color:white;">SPECIES</a></div>
-		<div class="col-xs-6 col-xs-4 habi"><a href="#" style="color:white;">HABITAT</a></div>
-		<div class="col-xs-6 col-xs-4 cal"><a href="calendar.html" style="color:white;">CALENDAR</a></div>
-	</div>
 
-	<div id="calendar"></div>
+
 
 
 	<footer class="footer">
       <div class="container">
-        <a class="text-muted" href="habitat.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
+        <a class="text-muted" href="index.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
       </div>
     </footer>
 
  </div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAE7fDwwn6zzoxqc0KJVR7uJWDhSC-rP4&callback=initMap"
-        async defer></script>
+
+
+
 </body>
 </html>
-
-
-
-<!-- NOTE: unfortunately, changing months will clear the vessel numbers on the dates. 
-	We will address that in the future builds but for now it is as it is since it's just a prototype. -->
