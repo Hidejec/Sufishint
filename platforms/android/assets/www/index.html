@@ -12,14 +12,14 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    
+
         <title>Sufishint</title>
         <script type="text/javascript" src="js/jquery.js"></script>
-       
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
         <style>
-              @font-face{
-            font-family: Bebas;
-            src: url('fonts/bebas.otf');
+        @font-face{
+            font-family: 'Bebas';
+            src: url('assets/bebas.otf');
         }
         body {
             background-color: #4089AA;
@@ -90,14 +90,35 @@
             }
 
         }
-
+        .no-js #loader { display: none;  }
+        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(img/Preloader.gif) center no-repeat #fff;
+        }
+        .se-pre-con span{
+            text-align: center;
+            font-size: 15px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 55%;
+            font-family: 'Bebas';
+            transform: translateY(-50%);
+        }
         </style>
     </head>
     <body>
+        <div class="se-pre-con"><span>Loading SuFishInt</span></div>
         <div id="map"></div>
         <div id="status"></div>
         <div class="container text-center">
-            <img src="img/a.png" class="logo img-responsive center-block" />
+            <img src="assets/projsuf_logo.png" class="logo img-responsive center-block" />
 
             <p class="head_one">Promoting Sustainable Fisheries through <br/> Responsible Fishing</p>
             <p class="head_two">LOGIN AS</p>
@@ -108,5 +129,11 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script>
+            $(window).load(function() {
+                // Animate loader off screen
+                $(".se-pre-con").fadeOut("slow");;
+            });
+        </script>
     </body>
 </html>

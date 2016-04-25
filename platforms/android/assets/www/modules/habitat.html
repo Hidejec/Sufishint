@@ -13,15 +13,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	 <!-- Latest compiled and minified JavaScript -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link href='fullcalendar.css' rel='stylesheet' />
 	<link href='fullcalendar.print.css' rel='stylesheet' media='print' />
 	<script src='moment.min.js'></script>
-	<script src='js/jquery.js'></script>
+	<script src='jquery.min.js'></script>
 	<script src='fullcalendar.min.js'></script>
-	<script type="text/javascript" src="js/map.js"></script>
 	<script>
 
 	$(document).ready(function() {
@@ -33,7 +32,11 @@
 			defaultView: 'month',
 			editable: true,
 		});
-		
+		$(window).load(function() {
+			// Animate loader off screen
+			$(".se-pre-con").fadeOut("slow");;
+		});
+
 	});
 
 
@@ -42,52 +45,13 @@
 <style>
 	@font-face{
 			font-family: 'Bebas';
-			src: url('assets/bebas.otf');
+			src: url('../assets/bebas.otf');
 		}
 	body {
 		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
 		font-size: 14px;
 	}
 
-	#calendar {
-		max-width: 300px;
-		max-height: 350px;
-		min-height: 300px;
-		vertical-align: middle !important;
-
-		margin-left: auto;
-		margin-right: auto;
-		font-family: 'Roboto';
-	}
-	.fc td, .fc th {
-  		border-style: none !important;
-  		padding-bottom: 10px;
-  		text-transform: uppercase;
-	}
-	#calendar td {
-    	text-align: center;
-    	border: 1px solid #000;
-    	font-size: 18px;
-	}
-	.fc-content-skeleton{
-		background-color: #BDFFB6;
-		border-radius: 20px;
-	}
-	.fc-head{
-		margin-bottom: 15px;
-	}
-	.fc th{
-		color: #FF677C;
-	}
-	.fc td{
-		font-family: 
-	}
-	.fc-content-skeleton thead td > span{
-    	font-size: 12px;	
-    }
-    .fc-day-grid .fc-week:nth-child(3) .fc-content-skeleton{
-    	background-color: red;	
-    }
 	/* Sticky footer styles
 		-------------------------------------------------- */
 		html {
@@ -128,13 +92,14 @@
 			float: left;
 		}
 		.footer{
-			background-color: #FE802B;
+			background-color: #327798;
 		}
 		a:hover{
 			text-decoration: none;
 		}
 		.top-banner{
 			background-color: #327798;
+			height:100px;
 		}
 		h3{
 			font-family: 'Bebas';
@@ -146,7 +111,7 @@
 			font-family: 'Bebas';
 			color: white;
 			float: right;
-			
+
 		}
 		h3,h4{
 			margin-top: -60px;
@@ -157,7 +122,7 @@
 			position: relative;
 		}
 		.second-banner{
-			background-image: url('assets/images/sardines_head.jpg');
+			background-image: url('../assets/images/sardines_head.jpg');
 			background-repeat: no-repeat;
 			background-position: center;
 			height: 80px;
@@ -184,44 +149,68 @@
 		.cal{
 			background-color: #FE802B;
 		}
+		a{
+			color:white;
+		}
+		.habitat_info{
+			width: 360px;
+			height: 300px;
+		}
+		.no-js #loader { display: none;  }
+		.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+		.se-pre-con {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 9999;
+			background: url(../img/Preloader.gif) center no-repeat #fff;
+		}
+		.se-pre-con span{
+			text-align: center;
+			font-size: 15px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 55%;
+			font-family: 'Bebas';
+			transform: translateY(-50%);
+		}
 </style>
 </head>
 <body>
-<div id="map"></div>
+ <div class="se-pre-con"><span>Loading SuFishInt</span></div>
 	<div class="container top-banner">
-	  <img src="assets/projsuf_logo.png" class="img-responsive logo" />
-		<h3 id="city">ZAMBOANGA</h3><br/><br/>  
-			<h4 id="coordinates">COORDINATES: 6.9214°N, 122.0790°E</h4>
-	  	<!-- // Set first to Zamboanga city for presentation purposes only. But it is now working dynamically.
-              pos.lat = 6.9214; pos.lng = 122.0790; //And also set the coordinates static for the sake of presentation -->
+	  <img src="../assets/projsuf_logo.png" class="img-responsive logo" />
+		<h3>ZAMBOANGA</h3><br/><br/>
+			<h4>COORDINATES: 6.9214°N, 122.0790°E</h4>
+
 	</div>
 	<div class="container second-banner">
 		<h2 class="text-center sardines">SARDINES</h3>
-		
+
 	</div>
 
 	<div class="row">
-		<div class="col-xs-6 col-xs-4 spec"><a href="specie_select.html" style="color:white;">SPECIES</a></div>
-		<div class="col-xs-6 col-xs-4 habi"><a href="#" style="color:white;">HABITAT</a></div>
-		<div class="col-xs-6 col-xs-4 cal"><a href="calendar.html" style="color:white;">CALENDAR</a></div>
+		<div class="col-xs-6 col-xs-4 spec"><a href="specie_select.html">SPECIES</a></div>
+		<div class="col-xs-6 col-xs-4 habi"><a href="habitat.html">HABITAT</a></div>
+		<div class="col-xs-6 col-xs-4 cal"><a href="calendar.html">CALENDAR</a></div>
 	</div>
 
-	<div id="calendar"></div>
-
+	<div class="container">
+		<img src="../assets/images/habitat_sardines.png" class="img-responsive habitat_info" />
+	</div>
 
 	<footer class="footer">
       <div class="container">
-        <a class="text-muted" href="habitat.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
+        <a class="text-muted" href="specie_select.html"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> BACK</a>
       </div>
     </footer>
 
  </div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAE7fDwwn6zzoxqc0KJVR7uJWDhSC-rP4&callback=initMap"
-        async defer></script>
+
+
+
 </body>
 </html>
-
-
-
-<!-- NOTE: unfortunately, changing months will clear the vessel numbers on the dates. 
-	We will address that in the future builds but for now it is as it is since it's just a prototype. -->

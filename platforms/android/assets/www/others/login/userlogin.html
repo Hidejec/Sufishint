@@ -17,10 +17,39 @@
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/nomq_index.css?68402319" id="nomq_pagesheet"/>
   <![endif]-->
+  <style>
+        @font-face{
+            font-family: 'Bebas';
+            src: url('../../assets/bebas.otf');
+        }
+        .no-js #loader { display: none;  }
+        .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+        .se-pre-con {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url(../../img/Preloader.gif) center no-repeat #fff;
+        }
+        .se-pre-con span{
+            text-align: center;
+            font-size: 15px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 55%;
+            font-family: 'Bebas';
+            transform: translateY(-50%);
+        }
+  </style>
   <!-- Other scripts -->
   <script type="text/javascript">
    document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
 </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   <!-- JS includes -->
   <script type="text/javascript">
    document.write('\x3Cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//use.typekit.net/ik/OHVZwfqlgg6bjAtuKviSW4tujh1yRahoVMEGE1sQyrIfeTtgf5LQkMJPH29D52bhFD8LFDiqweIowhFyFRIUZ2mqZ2jDw2iRFQMtFRBywRyyZQ9-HagkdhT8jasDiAZTShyTd1b0jhNlOfG0SY4z-cmRiYFuZc8D-e80ifoRdhXKg14zjcNXdkJHjcmKjWwldcmuZPG4f44oIMMjMkMfH6qJ81qbMg6IJMJ7fbRL-gMgeMb6MqGIQWmDZZMg60Ol0M9.js" type="text/javascript">\x3C/script>');
@@ -30,10 +59,15 @@
   <!-- Other scripts -->
   <script type="text/javascript">
    try {Typekit.load();} catch(e) {}
+
+     $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+    });
 </script>
    </head>
  <body>
-
+<div class="se-pre-con"><span>Loading SuFishInt</span></div>
   <div class="breakpoint active" id="bp_infinity" data-min-width="361"><!-- responsive breakpoint node -->
    <div class="clearfix borderbox" id="page"><!-- group -->
     <div class="browser_width grpelem" id="u110-bw">
@@ -97,7 +131,7 @@
       </div>
      </div>
     </div>
-    <form class="form-grp clearfix grpelem temp_no_id" method="post" enctype="multipart/form-data" action="../../info_page.html" data-orig-id="widgetu170"><!-- none box -->
+    <form class="form-grp clearfix grpelem temp_no_id" method="post" enctype="multipart/form-data" action="../../modules/info_page.html" data-orig-id="widgetu170"><!-- none box -->
      <div class="fld-grp clearfix grpelem temp_no_id" data-required="true" data-orig-id="widgetu171"><!-- none box -->
       <span class="fld-input NoWrap actAsDiv clearfix grpelem temp_no_id" data-orig-id="u174-4"><!-- content --><input class="wrapped-input temp_no_id" type="text" spellcheck="false" name="username" id="username" tabindex="4" /><label class="wrapped-input fld-prompt temp_no_id" for="widgetu171_input" data-orig-id="widgetu171_prompt"><span class="actAsPara placeholder" data-placeholder-for="widgetu171_prompt_0_content"><!-- placeholder node --></span></label></span>
      </div>

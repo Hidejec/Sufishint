@@ -136,9 +136,8 @@ function formatDate(date) {
                       });
                     })(x, y);
                   }
-
                 }
-
+                  $(".se-pre-con").fadeOut("slow");
             } else {
               window.alert('No results found');
             }

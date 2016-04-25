@@ -12,7 +12,7 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 	 <!-- Latest compiled and minified JavaScript -->
@@ -50,7 +50,7 @@
 <style>
 	@font-face{
 			font-family: 'Bebas';
-			src: url('assets/bebas.otf');
+			src: url('../assets/bebas.otf');
 		}
 	body {
 		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
@@ -109,7 +109,7 @@
 			font-family: 'Bebas';
 			color: white;
 			float: right;
-			
+
 		}
 		h3,h4{
 			margin-top: -60px;
@@ -133,7 +133,7 @@
 		}
 		.list-group{
 			overflow-y: scroll;
-			height: 400px; 
+			height: 400px;
 		}
 		.list-group .list-group-item{
 			background-color: #FE802B;
@@ -154,14 +154,24 @@
 			width: 100%;
 			height: 100%;
 			z-index: 9999;
-			background: url(img/Preloader.gif) center no-repeat #fff;
+			background: url(../img/Preloader.gif) center no-repeat #fff;
+		}
+		.se-pre-con span{
+			text-align: center;
+			font-size: 15px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 55%;
+			font-family: 'Bebas';
+			transform: translateY(-50%);
 		}
 </style>
 </head>
 <body>
-<div class="se-pre-con"></div>
+<div class="se-pre-con"><span>Fetching licenses</span></div>
 	<div class="container top-banner" style="margin-bottom:-20px">
-	  <img src="assets/projsuf_logo.png" class="img-responsive logo" />
+	  <img src="../assets/projsuf_logo.png" class="img-responsive logo" />
 		<h3>ZAMBOANGA</h3><br/><br/>
 			<h4>COORDINATES: 6.9214°N, 122.0790°E</h4>
 	</div>
@@ -190,10 +200,10 @@
 		else{
 			$("#influxtext").html("Total number of influx: "+splitter.length);
 			for(var x = 0 ; x< splitter.length; x++){
-				$('.list-group').append('<li class="list-group-item"><a href="others/vms/vms.html"  class="text-center" style="font-family:Roboto">'+splitter[x]+'<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>');
+				$('.list-group').append('<li class="list-group-item"><a href="../others/vms/vms.html"  class="text-center" style="font-family:Roboto">'+splitter[x]+'<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>');
 			}
 		}
-		
+
 		//sessionStorage.setItem('licenses', "");
 	});
 </script>

@@ -9,7 +9,7 @@ $(document).ready(function(){
 				window.location.href="../../info_page.html";
 			}
 		});*/
-		window.location.href="../../info_page.html";
+		window.location.href="../../modules/info_page.html";
 	});
 	$("#vessel_su").click(function(){
 		/*$.ajax({
@@ -20,13 +20,13 @@ $(document).ready(function(){
 				window.location.href="../../info_page.html";
 			}
 		});*/
-		window.location.href="../../info_page.html";
+		window.location.href="../../modules/info_page.html";
 	});
 	$("#buttonu481").click(function(){
-		window.location.href="../../register_watch.html";
+		window.location.href="../../modules/register_watch.html";
 	});
 	$("#buttonu612").click(function(){
-		window.location.href="../../register_vessel.html";
+		window.location.href="../../modules/register_vessel.html";
 	});
 
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
 				window.location.href="info_page.html";
 			}
 		});*/
-		window.location.href="info_page.html";
+		window.location.href="../others/login/userlogin.html";
 	});
 
 	$("#register_vessel").click(function(){
@@ -57,7 +57,7 @@ $(document).ready(function(){
 				window.location.href="others/login/vessel-login.html";
 			}
 		});*/
-		window.location.href="others/login/vessel-login.html";
+		window.location.href="../others/login/vessel-login.html";
 	});
 
 });
