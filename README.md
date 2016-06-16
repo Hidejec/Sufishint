@@ -48,3 +48,6 @@ We learned that it's really hard to combat overfishing, that "Managing Fisheries
 
 ## What's next for Project SuFishInT
 The application shall be sustained with information and data it lacks to make it more comprehensive and information-ready for those who seek learning about Marine Protection and Preservation. Will also add map that will show presence of Chlorophyll A in the Philippine waters that will determine assumably fish productivity. We will also map MPAs or Marine Protected Areas, and create a Shell Fish Bulletin if HABS (Harmful Algal Blooms) occurs on a particular period.
+
+
+##### Rewriting project IN PROGRESS-------------------------. 
