@@ -12,21 +12,23 @@ We have highly considered the transition of each information and escalation of d
 
 The application is divided in three parts:
 
-Phase 1: General Information for Public Awareness as the application gets the coordinates from the User's Geographic location via GPS. Upon getting the geographic location through the coordinates gathered, it will display the following information necessary for those who wish to do marine activities in the area:
+**Phase 1**: General Information for Public Awareness as the application gets the coordinates from the User's Geographic location via GPS. Upon getting the geographic location through the coordinates gathered, it will display the following information necessary for those who wish to do marine activities in the area:
 
 Laws and Regulations including ordinances (barangay to municipal level regulations);
 Weather outlook including the Precipitation, Humidity, Tide, and water level;
 Demographics and necessary contact information available for aid in case needed.
-Phase 2: Biological Information of fishes present in the area shown to give a better understanding on our marine species most specifically the following:
+
+**Phase 2**: Biological Information of fishes present in the area shown to give a better understanding on our marine species most specifically the following:
 
 Species and size
 Habitat and abundance
-Spawning and Catching Seasons calendar that will show the spawning season and the best time to hunt the fish. (The mentioned seasons will still vary per location). Beside the dates are smaller numbers indicating the number of influx of vessels present in the zone*.
-Phase 3: A module that address the IUU through active monitoring of Commercial Vessels and fishing boats using the data from the GPS and the data fro the Vessel Monitoring System (VMS). The VMS will show the vessels in the zone* including their information and their coordinates. This will be easier for BFAR personnel to monitor the vessels and boats who illegally fish and foreign vessels who fish in Philippine territories.
+Spawning and Catching Seasons calendar that will show the spawning season and the best time to hunt the fish. (The mentioned seasons will still vary per location). Beside the dates are smaller numbers indicating the number of influx of vessels present in the zone.
+
+**Phase 3**: A module that address the IUU through active monitoring of Commercial Vessels and fishing boats using the data from the GPS and the data fro the Vessel Monitoring System (VMS). The VMS will show the vessels in the zone including their information and their coordinates. This will be easier for BFAR personnel to monitor the vessels and boats who illegally fish and foreign vessels who fish in Philippine territories.
 
 The map will also show the activities of the vessels or boats specifically their origin and every docking to ports until if the vessels did exportation activities until they reach again the Philippine waters and local zones.
 
-*Zone is referred to as the area covered by the territories within the 24 nautical miles.
+##### Zone is referred to as the area covered by the territories within the 24 nautical miles.
 
 ## How we built it
 The application was built in HTML, CSS, Javascript, and other frameworks through Phone Gap. We made sure that the data from the central server (cloud server) of BFAR will be used to verify and validate registration of licensed vessels in the app. Data were gathered based on the existing information available and shall also consider focus group discussion with various organizations to suffice the needed information. Slim Framework was also used in the application while images were processed according to web standards.
